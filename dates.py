@@ -23,16 +23,19 @@ for amerFilename in os.listdir('.'):
 
 # european style
 
-euroFile = before + day + '-' + month + '-' + year + after
+    euroFile = before + day + '-' + month + '-' + year + after
 
-absWorkingDir = os.path.abspath('.')
-amerFilename = os.path.join(absWorkingDir, amerFilename)
-euroFile = os.path.join(absWorkingDir, euroFile)
+    absWorkingDir = os.path.abspath('.')
+    amerFilename = os.path.join(absWorkingDir, amerFilename)
+    euroFile = os.path.join(absWorkingDir, euroFile)
 
-# rename files
+    # rename files
 
-print(f'Renaming {amerFilename} to {euroFile}')
-# shutil.move(amerFilename,euroFile)
+    # shows what changes will happen without doing them
+    print(f'Renaming {amerFilename} to {euroFile}')
+    
+    # uncomment to cause permanet change
+    # shutil.move(amerFilename,euroFile) 
 
 
 
